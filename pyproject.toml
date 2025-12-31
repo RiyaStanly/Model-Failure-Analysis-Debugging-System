@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mfads"
+version = "0.1.0"
+description = "Model Failure Analysis & Debugging System"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "transformers",
+    "datasets",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "streamlit",
+    "sentence-transformers",
+    "hdbscan",
+    "shap",
+    "spacy",
+    "nltk",
+    "tqdm",
+    "plotly"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "mypy"
+]
+
+[project.scripts]
+mfads = "mfads.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

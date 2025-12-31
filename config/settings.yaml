@@ -1,0 +1,18 @@
+# General Settings
+seed: 42
+dataset: "ag_news"
+output_dir: "reports"
+train_sample_size: 2000
+test_sample_size: 500
+
+# Model Hyperparameters
+models:
+  tfidf:
+    max_features: 10000
+    ngram_range: [1, 2]
+    C: 1.0
+  distilbert:
+    pretrained_model: "distilbert-base-uncased"
+    batch_size: 16
+    epochs: 3
+    learning_rate: 2e-5

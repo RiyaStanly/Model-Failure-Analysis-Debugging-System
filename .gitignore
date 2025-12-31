@@ -1,0 +1,37 @@
+# Python dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Local configuration
+.env
+
+# Models and Reports (Large files or local artifacts)
+models/
+reports/
+logs/
+
+# MacOS
+.DS_Store
