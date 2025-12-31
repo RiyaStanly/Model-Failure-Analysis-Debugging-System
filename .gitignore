@@ -29,9 +29,9 @@ MANIFEST
 .env
 
 # Models and Reports (Large files or local artifacts)
-models/
-reports/
-logs/
+/models/
+/reports/
+/logs/
 
 # MacOS
 .DS_Store
